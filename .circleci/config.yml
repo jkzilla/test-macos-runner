@@ -1,0 +1,9 @@
+version: 2.1
+
+jobs:
+  running-runner-in-cloud:
+    macos:
+      xcode: 12.2.0
+    steps:
+      - checkout
+      - run: ryan.sh
