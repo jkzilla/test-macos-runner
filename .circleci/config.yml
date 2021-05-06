@@ -48,7 +48,7 @@ jobs:
 
           # From https://circleci.com/docs/2.0/runner-installation/index.html#circleci-runner-installation-macos
           mkdir -p '/Library/Preferences/com.circleci.runner'
-          cat > '/Library/Preferences/com.circleci.runner/launch-agent-config.yaml' << EOM
+          cat > '/Library/Preferences/com.circleci.runner/launch-agent-config.yaml' \<< EOM
           api:
               auth_token: $auth_token
           runner:
@@ -60,7 +60,7 @@ jobs:
               file: /Library/Logs/com.circleci.runner.log
           EOM
           # From https://circleci.com/docs/2.0/runner-installation/index.html#install-the-launchd-plist
-          cat > '/Library/LaunchDaemons/com.circleci.runner.plist' << EOM
+          cat > '/Library/LaunchDaemons/com.circleci.runner.plist' \<< EOM
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
