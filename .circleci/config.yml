@@ -6,7 +6,7 @@ jobs:
       xcode: 12.2.0
     steps:
       - checkout
-      - run: ls
+      - run: bash ryan.sh
 
 workflows:
   version: 2
