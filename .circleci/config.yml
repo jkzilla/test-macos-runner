@@ -7,3 +7,9 @@ jobs:
     steps:
       - checkout
       - run: ryan.sh
+
+workflows:
+  version: 2
+  installLA:
+      jobs:
+        - running-runner-in-cloud
